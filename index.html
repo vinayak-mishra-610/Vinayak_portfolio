@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vinayak Mishra — Data Analyst portfolio featuring SQL, Python, Power BI, Excel and AWS projects." />
+  <title>Vinayak Mishra | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">VM<span>.</span></a>
+    <button class="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-resume" href="assets/Vinayak_Mishra_Resume.pdf" download>Resume ↓</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <p class="eyebrow">DATA ANALYST • DATA SCIENCE</p>
+        <h1>Turning data into<br><span>useful decisions.</span></h1>
+        <p class="hero-text">
+          I'm Vinayak Mishra, a B.Tech CSE (Data Science) student focused on
+          analytics, business intelligence, and cloud-based data solutions.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View my work</a>
+          <a class="btn secondary" href="#contact">Let's connect</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/vinayak-mishra-610" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/vinayak-mishra-114639315/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://x.com/VinayakM_610" target="_blank" rel="noreferrer">X ↗</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="terminal">
+          <div class="terminal-top"><span></span><span></span><span></span><b>analytics.py</b></div>
+          <pre><code><span class="purple">import</span> pandas <span class="purple">as</span> pd
+
+data = pd.read_csv(<span class="green">"jobs.csv"</span>)
+
+insights = data.groupby(
+    <span class="green">"job_country"</span>
+).agg({
+    <span class="green">"salary_year_avg"</span>: <span class="green">"mean"</span>
+})
+
+<span class="purple">print</span>(insights.head())</code></pre>
+          <div class="terminal-status">● analysis complete</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label">01 — ABOUT</div>
+      <div>
+        <h2>Curious about data.<br><span>Serious about impact.</span></h2>
+        <p>
+          I'm a Computer Science & Engineering (Data Science) student at
+          BBDITM, Lucknow, building practical skills in data analytics and
+          business intelligence.
+        </p>
+        <p>
+          I enjoy taking messy datasets, finding the patterns inside them,
+          and presenting those findings in a way that makes sense to people.
+          My current toolkit combines SQL, Python, Power BI, Excel and AWS.
+        </p>
+        <div class="stats">
+          <div><strong>478K+</strong><span>records analyzed</span></div>
+          <div><strong>5+</strong><span>analytics projects</span></div>
+          <div><strong>2027</strong><span>graduation</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label">02 — SKILLS</div>
+      <div class="skills-wrap">
+        <div class="skill-group">
+          <h3>Analytics</h3>
+          <div class="chips"><span>SQL</span><span>Excel</span><span>Power BI</span><span>Data Cleaning</span><span>Data Visualization</span><span>Business Analysis</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <div class="chips"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Flask</span><span>DSA</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud & Tools</h3>
+          <div class="chips"><span>AWS</span><span>EC2</span><span>S3</span><span>RDS/Aurora</span><span>Lambda</span><span>API Gateway</span><span>CloudWatch</span><span>GitHub</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-label">03 — PROJECTS</div>
+      <div class="section-heading">
+        <h2>Selected work</h2>
+        <p>Projects built to practice real-world analytics, reporting and cloud workflows.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project featured">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <div class="project-meta">AWS • PYTHON • FLASK • SQL</div>
+            <h3>InsightFlow Cloud Analytics</h3>
+            <p>
+              An end-to-end cloud analytics application for uploading and
+              processing job-market data, storing it in cloud databases and
+              exposing analytics through a web application.
+            </p>
+            <div class="project-tags"><span>AWS</span><span>Python</span><span>Flask</span><span>SQL</span></div>
+            <a href="https://github.com/vinayak-mishra-610/InsightFlow-Cloud-Analytics" class="project-link">View project ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <div class="project-meta">POWER BI • DATA VISUALIZATION</div>
+            <h3>Data Jobs Dashboard</h3>
+            <p>
+              Interactive dashboard exploring job-market data, including
+              hiring trends, locations, job categories and compensation insights.
+            </p>
+            <div class="project-tags"><span>Power BI</span><span>DAX</span><span>Data Modeling</span></div>
+            <a href="https://github.com/vinayak-mishra-610/PowerBI_dashboard_1" class="project-link">View project ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <div class="project-meta">SQL • DATA ANALYSIS</div>
+            <h3>Job Market SQL Analysis</h3>
+            <p>
+              SQL-based analysis of a large job-posting dataset to uncover
+              patterns in salaries, remote work, job titles and hiring demand.
+            </p>
+            <div class="project-tags"><span>SQL</span><span>PostgreSQL</span><span>EDA</span></div>
+            <a href="https://github.com/vinayak-mishra-610/SQL_job_analysis_project" class="project-link">View project ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-number">04</div>
+          <div class="project-body">
+            <div class="project-meta">EXCEL • ANALYTICS</div>
+            <h3>Excel Data Analysis</h3>
+            <p>
+              Spreadsheet-based analysis and forecasting projects using
+              formulas, charts, data cleaning and business-focused reporting.
+            </p>
+            <div class="project-tags"><span>Excel</span><span>Forecasting</span><span>Charts</span></div>
+            <a href="https://github.com/vinayak-mishra-610/excel_data_analysis_projects" class="project-link">View project ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-label">04 — EXPERIENCE</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2026</span>
+          <div>
+            <h3>Data-focused Virtual Internships</h3>
+            <p>Completed practical job simulations covering data labeling, analytical thinking, documentation, data privacy and feedback delivery.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2026</span>
+          <div>
+            <h3>GRAStech — Summer Internship</h3>
+            <p>Completed a 30-day, 90-hour summer internship program focused on professional and technical development.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2023–2027</span>
+          <div>
+            <h3>B.Tech — CSE (Data Science)</h3>
+            <p>Abdul Kalam Technical University / BBDITM, Lucknow. Building a foundation across computer science, data science and analytics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta" id="contact">
+      <div class="section-label">05 — CONTACT</div>
+      <div class="cta-content">
+        <p class="eyebrow">OPEN TO OPPORTUNITIES</p>
+        <h2>Let's build something<br><span>data-driven.</span></h2>
+        <p>Looking for entry-level opportunities in data analytics, business analytics and related data roles.</p>
+        <a class="btn primary" href="mailto:vinayakmishradata@gmail.com">Email me ↗</a>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/vinayak-mishra-114639315/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/vinayak-mishra-610" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://x.com/VinayakM_610" target="_blank" rel="noreferrer">X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Vinayak Mishra</span>
+    <span>Built with HTML, CSS & JavaScript.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
